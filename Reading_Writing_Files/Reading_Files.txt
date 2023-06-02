@@ -1,0 +1,44 @@
+Working with huge amainut od data, it would be better getting data from files; not just from variables.
+Python gives File_Object.
+File_Object con be used to read and write files. 
+
+Example: file=open("siir.txt")
+
+By doing this we have an file_object ans assigning it to a variable called file.
+As parameter we gie the name of the file to be opened. 
+Hier we assume that we are in the same Directory with the file. 
+otherwiese we woul give the absolute or relative PATH.
+
+    readline() method: 
+this methods reads the file line by line.
+But each time we call the readline() method, 
+the file object updates the current position in the file. 
+So keeps moving forward. 
+
+    read() method:
+this method reads the file form current position until the end of file. 
+
+example: 
+    file_obje=open("siir.txt")
+    print(file_obje.readline())
+    print(file_obje.read())
+
+    close() Method:
+Finally we should use close() method to close the file_object.
+Because after openingthe file, file would be locked down till the object is ended.
+No other program can use it.
+And also OS systems can manage some limited number of objeckt.
+
+example:
+    file_object.close()
+
+
+    Using object with "with" 
+to avoid forgetting to close the object we use keyword "with"
+example:
+    with open("siir.txt") as file_object:
+        print(file_object.read())
+
+By using with-keyword after reading python would automatically close the object.
+
+
