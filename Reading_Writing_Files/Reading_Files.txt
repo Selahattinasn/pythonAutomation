@@ -40,5 +40,5 @@ example:
         print(file_object.read())
 
 By using with-keyword after reading python would automatically close the object.
-
+Automatically closing at the and of block.
 

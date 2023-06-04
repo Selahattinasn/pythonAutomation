@@ -15,4 +15,25 @@ with open("siir.txt") as file:
 
 with open("siir.txt") as file:
     for line in file:
-        print(line.strip().upper())
+        print(line.strip().upper()) #we use strip to remove the newline character, we get the output without empty lines,
+
+
+
+# Another way we can work with the contents of the file is to read the file lines into a list. 
+# Then, we can do something with the lists like sort contents. 
+# To do that, we open the file and use the.readlines method. 
+
+file= open("siir.txt")
+
+lines = file.readlines()
+print(type(lines)) # lines varible is actually a list sequence. 
+file.close() # we closed the fule object but we have already a python_list, consist of lines of the text. 
+
+print(lines)
+lines.sort()
+print(lines)
+
+## !!!! f a file is just a few kilobytes like in our example here, 
+# it's fine to read it and process it completely in memory. 
+# But for large files, like the big log file of hundreds and hundreds of megabytes of data, 
+# it's more efficient to process it line by line.
