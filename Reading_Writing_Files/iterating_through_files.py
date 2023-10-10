@@ -1,8 +1,8 @@
 # Files can be iterared as other python sequences; 
 # like list or strings.
 # This would be useful when we porzess a file line by line...
-
-with open("siir.txt") as file:
+siir="C:\\Users\\karakaya\\Desktop\\Agenda\\pythonAutomation\\Reading_Writing_Files\\siir.txt"
+with open(siir) as file:
     for line in file:
         print(line.upper())
 
@@ -13,7 +13,7 @@ with open("siir.txt") as file:
 
 # To avoid new line caharter, use strip() method. 
 
-with open("siir.txt") as file:
+with open(siir) as file:
     for line in file:
         print(line.strip().upper()) #we use strip to remove the newline character, we get the output without empty lines,
 
@@ -23,7 +23,7 @@ with open("siir.txt") as file:
 # Then, we can do something with the lists like sort contents. 
 # To do that, we open the file and use the.readlines method. 
 
-file= open("siir.txt")
+file= open(siir)
 
 lines = file.readlines()
 print(type(lines)) # lines varible is actually a list sequence. 
@@ -33,6 +33,7 @@ print(lines)
 lines.sort()
 print(lines)
 
+# Escape characters: \n  \t  
 ## !!!! f a file is just a few kilobytes like in our example here, 
 # it's fine to read it and process it completely in memory. 
 # But for large files, like the big log file of hundreds and hundreds of megabytes of data, 
