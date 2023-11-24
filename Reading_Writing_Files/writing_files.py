@@ -10,7 +10,7 @@ with open("hello.py", "w") as hello: #
 # we don't have to pass the R as a second argument when we just want to read the file.#
 
 
-with open("siir.txt", "a") as file:
+with open("siir.txt", "a+") as file:
     file.write("          Mehmet Akif Ersoy")
     file.read()
 
