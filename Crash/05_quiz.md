@@ -47,8 +47,6 @@ print("2 + 2 = " + str((2 + 2)))
 Question 5
 What do you call a combination of numbers, symbols, or other values that produce a result when evaluated?
 
-Status: [object Object]
-1 point
 
 An explicit conversion
 
@@ -59,4 +57,4 @@ An expression
 A variable
 
 
- An implicit conversion
+An implicit conversion
