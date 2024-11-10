@@ -14,7 +14,7 @@ Data Types in python:
 
 ![data_1](images/data_1.png)   
 
-***As seen inthe message "TypeError: unsupported operand type(s) for +: 'int' and 'str'"; to achive that we use methods to change data types andt than we can combine teses datas. ***
+***As seen inthe message "TypeError: unsupported operand type(s) for +: 'int' and 'str'"; to achive that we use methods to change data types andt than we can combine teses datas.***
 
 ![data_2](images/data_2.png)  
 
