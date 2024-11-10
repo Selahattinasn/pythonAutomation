@@ -1,3 +1,5 @@
+## Data Types
+
 Data Types in python:
 1. String
 2. Integer: represents whole numbers.
