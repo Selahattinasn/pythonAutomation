@@ -4,7 +4,23 @@ Question 1
 Complete the function by filling in the missing parts. The color_translator function receives the name of a color, then prints its hexadecimal value. Currently, it only supports the three additive primary colors (red, green, blue), so it returns "unknown" for all other colors.
 
 ````
+def color_translator(color):
+	if color == "red":
+		hex_color = "#ff0000"
+	elif color == "green":
+		hex_color = "#00ff00"
+	elif color == "blue":
+		hex_color = "#0000ff"
+	else:
+		hex_color = "unknown"
+	return hex_color
 
+print(color_translator("blue")) # Should be #0000ff
+print(color_translator("yellow")) # Should be unknown
+print(color_translator("red")) # Should be #ff0000
+print(color_translator("black")) # Should be unknown
+print(color_translator("green")) # Should be #00ff00
+print(color_translator("")) # Should be unknown
 ````
 
 Question 4
@@ -82,12 +98,11 @@ The fractional_part function divides the numerator by the denominator, and retur
 Note: Since division by 0 produces an error, if the denominator is 0, the function should return 0 instead of attempting the division.
 ````
 def fractional_part(numerator, denominator):
-	# Operate with numerator and denominator to 
-    if numerator==0 or denominator==0 or numerator==denominator:
-# keep just the fractional part of the quotient
-	    return 0
-    else:
+    if denominator !=0:
         return numerator/denominator-numerator//denominator
+	# Operate with numerator and denominator to 
+# keep just the fractional part of the quotient
+    return 0
 
 print(fractional_part(5, 5)) # Should be 0
 print(fractional_part(5, 4)) # Should be 0.25
@@ -98,7 +113,3 @@ print(fractional_part(0, 5)) # Should be 0
 ````
 
 
-
-````
-
-````
