@@ -33,15 +33,15 @@ Complete the body of the format_name function. This function receives the first_
 ````
 def format_name(first_name, last_name):
 	# code goes here
-	msg=""
 	if len(first_name)>0 and len(last_name)>0:
-		msg="Name: "+last_name+", "+first_name
-	elif len(first_name)>0 and len(last_name)==0:
-		msg="Name: "+first_name
-	elif len(first_name)==0 and len(last_name)>0:
-		msg="Name: "+last_name
-		
-	return msg 
+		string=last_name+","+first_name
+	if len(first_name)>0and len(last_name)==0:
+		string=first_name
+	if len(first_name)==0 and len(last_name)>0:
+		string=last_name
+	if len(first_name)==0 and len(last_name)==0:
+		string=""
+	return string 
 
 print(format_name("Ernest", "Hemingway"))
 # Should return the string "Name: Hemingway, Ernest"
