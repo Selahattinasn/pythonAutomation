@@ -1,17 +1,14 @@
-# 1) Complete the function to return the result of the conversion
-def convert_distance(miles):
-	km = miles * 1.6  # approximately 1.6 km in 1 mile
-	return km
+sum=0
 
-my_trip_miles = 55
-print(my_trip_miles)
+adim=0
 
-# 2) Convert my_trip_miles to kilometers by calling the function above
-my_trip_km = convert_distance(my_trip_miles)
-print(my_trip_km)
-# 3) Fill in the blank to print the result of the conversion
-print("The distance in kilometers is " + str(my_trip_km))
+while adim<=100:
+    sum=adim+sum
+    adim=adim+1
+    #print(adim)
+print(sum)
 
-# 4) Calculate the round-trip in kilometers by doubling the result,
-#    and fill in the blank to print the result
-print("The round-trip in kilometers is " + str(my_trip_km * 2))
+toplam=0
+for i in [1,2,3,4,5,6,7,8,9,10]:
+    toplam+=i
+print(toplam)
