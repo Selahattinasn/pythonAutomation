@@ -1,4 +1,8 @@
 ## Quiz For Loop
+Question 1
+How are while loops and for loops different in Python?
+While loops iterate while a condition is true, for loops iterate through a sequence of elements.
+
 
 Question 2
 Fill in the blanks to make the factorial function return the factorial of n. Then, print the first 10 factorials (from 0 to 9) with the corresponding number. Remember that the factorial of a number is defined as the product of an integer and all integers before it. For example, the factorial of five (5!) is equal to 1*2*3*4*5=120. Also recall that the factorial of zero (0!) is equal to 1.
