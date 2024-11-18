@@ -195,3 +195,30 @@ https://repl.it/languages/python3
 https://repl.it/languages/python3
 
 https://repl.it/languages/python3
+
+
+## Nested For Loops
+
+
+````
+for left in range(7):
+    for right in range(left,7):
+        print("["+str(left)+"|"+str(right)+"]",end=" ")
+    print()
+````
+
+![forl_9](images/forl_9.png)
+
+
+````
+
+teams=["Dragons","Wolves","Pandas","Unicorns"]
+
+for home_team in teams:
+    for away_team in teams:
+        if home_team != away_team:
+            print(home_team + " vs "+ away_team)
+
+````
+
+![forl_10](images/forl_10.png)
