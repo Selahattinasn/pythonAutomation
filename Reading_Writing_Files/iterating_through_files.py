@@ -1,7 +1,7 @@
 # Files can be iterared as other python sequences; 
 # like list or strings.
 # This would be useful when we porzess a file line by line...
-siir="C:\\Users\\karakaya\\Desktop\\Agenda\\pythonAutomation\\Reading_Writing_Files\\siir.txt"
+siir="siir.txt" #"C:\\Users\\karakaya\\Desktop\\Agenda\\pythonAutomation\\Reading_Writing_Files\\siir.txt"
 with open(siir) as file:
     for line in file:
         print(line.upper())

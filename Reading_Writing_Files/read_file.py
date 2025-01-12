@@ -10,16 +10,18 @@
 #In Python, this file descriptor is stored as an attribute of the files object. 
 # The file object gives us a bunch of methods that we can use to operate with the file. 
 # Now, with this file object, we can read the contents of the file and print them to the
-siir="C:\\Users\\karakaya\\Desktop\\Agenda\\pythonAutomation\\Reading_Writing_Files\\siir.txt"
-file=open(siir)
+#siir="C:\\Users\\karakaya\\Desktop\\Agenda\\pythonAutomation\\Reading_Writing_Files\\siir.txt"
+
+file=open("siir.txt")
 print(file.readline()) # Here we've used the readline method. It lets us read a single line of a file. 
 print(file.read()) # read method, which reads from the current position until the end of the file instead of just one line.
 
-file.close()
+file.close() # hier we explicitely closing the object. 
 
 # to automaticall close the obje use the "with" keyword.
-with open(siir) as file_line:
-    print(file_line.read())
+with open("siir.txt") as file:
+    print(file.readline())
+    print(file.read())
 
 # It's a good idea to close files after you've opened them for a few reasons. 
 # First, when a file is opening your script, 

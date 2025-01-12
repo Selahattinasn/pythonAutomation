@@ -1,5 +1,5 @@
 with open("hello.py", "w") as hello: # 
-    hello.write("print('Selamun aleykum kardas')")
+    hello.write("print('Selamun aleykum sakirt')")
 #he second argument to the open method is new though. 
 # So what does the w mean? 
 # File objects can be opened in several different modes. 

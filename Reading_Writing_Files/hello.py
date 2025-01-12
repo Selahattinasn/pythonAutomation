@@ -1,1 +1,0 @@
-print('Selamun aleykum kardas')
